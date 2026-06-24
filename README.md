@@ -33,20 +33,22 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User decides to stay on Normal difficulty
+2. User enters a guess of 20
+3. Game returns "Too Low"
+4. User enters a guess of 70 → "Too High"
+5. Score updates correctly after each guess
+6. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+FAILED tests/test_game_logic.py::test_winning_guess - AssertionError: assert ('Win', '🎉 Correct!') == 'Win'
+FAILED tests/test_game_logic.py::test_guess_too_high - AssertionError: assert ('Too High', '📉 Go LOWER!') == 'Too High'
+FAILED tests/test_game_logic.py::test_guess_too_low - AssertionError: assert ('Too Low', '📈 Go HIGHER!') == 'Too Low'
+=========================================================================== 3 failed, 6 passed in 0.09s ===========================================================================
 ```
 
 ## 🚀 Stretch Features
