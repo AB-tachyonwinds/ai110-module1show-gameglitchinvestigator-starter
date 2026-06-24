@@ -37,7 +37,6 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 2. User enters a guess of 20
 3. Game returns "Too Low"
 4. User enters a guess of 70 → "Too High"
-5. Score updates correctly after each guess
 6. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
