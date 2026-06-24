@@ -45,10 +45,20 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ## 🧪 Test Results
 
 ```
-FAILED tests/test_game_logic.py::test_winning_guess - AssertionError: assert ('Win', '🎉 Correct!') == 'Win'
-FAILED tests/test_game_logic.py::test_guess_too_high - AssertionError: assert ('Too High', '📉 Go LOWER!') == 'Too High'
-FAILED tests/test_game_logic.py::test_guess_too_low - AssertionError: assert ('Too Low', '📈 Go HIGHER!') == 'Too Low'
-=========================================================================== 3 failed, 6 passed in 0.09s ===========================================================================
+=============================================================================== test session starts ===============================================================================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\angel\AppData\Local\Python\pythoncore-3.14-64\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\angel\Downloads\projects\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.14.0
+collected 6 items                                                                                                                                                                  
+tests/test_game_logic.py::test_win_with_string_secret PASSED                                                                                                                 [ 16%]
+tests/test_game_logic.py::test_too_high_with_string_secret PASSED                                                                                                            [ 33%]
+tests/test_game_logic.py::test_too_low_with_string_secret PASSED                                                                                                             [ 50%]
+tests/test_game_logic.py::test_easy_range PASSED                                                                                                                             [ 66%]
+tests/test_game_logic.py::test_hard_range PASSED                                                                                                                             [ 83%]
+tests/test_game_logic.py::test_unknown_difficulty_defaults_to_normal_range PASSED                                                                                            [100%]
+
+================================================================================ 6 passed in 0.02s ================================================================================
 ```
 
 ## 🚀 Stretch Features
